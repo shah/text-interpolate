@@ -1,4 +1,4 @@
-import * as ws from "https://cdn.jsdelivr.net/gh/shah/text-whitespace@v1.0.1/mod.ts";
+import * as ws from "https://denopkg.com/shah/text-whitespace@v1.0.1/mod.ts";
 import { assertEquals } from "https://deno.land/std@v0.61.0/testing/asserts.ts";
 import * as interp from "./mod.ts";
 
