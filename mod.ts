@@ -1,3 +1,4 @@
+// deno-lint-ignore-file no-explicit-any
 export interface InterpolationOptions {
   bracketPrefixes?: string[];
   openBracket: string;
@@ -54,6 +55,7 @@ export function defaultPropFetcher(
 }
 
 export function interpolationPropSupplier(
+  // deno-lint-ignore ban-types
   lookInObject: object | object[],
   options: InterpolationExprOptions,
   fetcher: InterpolatePropFetcher,
@@ -101,7 +103,7 @@ function fetchFromObject(
   lookInObj: any,
   findExpr: string,
   bracketPrefix?: string,
-  level: number = 0,
+  level = 0,
   parent?: any,
   parentDelim?: string,
 ): InterpolatePropFetcherResult {

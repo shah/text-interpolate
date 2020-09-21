@@ -32,6 +32,7 @@ Deno.test("Text interpolation with string supplier", () => {
             case "entity":
               return "table";
           }
+          // deno-lint-ignore no-unreachable
           return "#ERROR#";
         },
         interpolationOptions,
