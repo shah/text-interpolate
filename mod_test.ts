@@ -1,5 +1,5 @@
-import * as ws from "https://raw.githubusercontent.com/shah/text-whitespace/v1.0.2/mod.ts";
-import { assertEquals } from "https://deno.land/std@v0.62.0/testing/asserts.ts";
+import * as ws from "https://raw.githubusercontent.com/shah/text-whitespace/v1.0.3/mod.ts";
+import { assertEquals } from "https://deno.land/std@0.77.0/testing/asserts.ts";
 import * as interp from "./mod.ts";
 
 Deno.test("Text interpolation with string supplier", () => {
